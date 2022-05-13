@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Тестовое задание | Веб-Культ</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+    />
+    <link href="./static/css/page.index.css" rel="stylesheet" />
+    <script src="./static/js/index.js" type="text/javascript"></script>
+    <script src="./static/js/popoutControl.js" type="text/javascript"></script>
+    <script src="./static/js/utils.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="Page">
+      <div class="Page__In">
+        <div class="FormWrapper">
+          <div class="FormWrapper__In">
+            <span class="Form__Title">Форма</span>
+            <form
+              name="testForm"
+              class="Form__In"
+              onsubmit="return validateForm(event)"
+            >
+              <div class="Input" id="InputName">
+                <div class="Input__Top">Имя</div>
+                <input
+                  placeholder="Иван"
+                  class="Input__In"
+                  name="name"
+                  type="text"
+                />
+              </div>
+              <div class="Input" id="InputEmail">
+                <div class="Input__Top">E-mail</div>
+                <input
+                  placeholder="test@example.com"
+                  class="Input__In"
+                  type="email"
+                  name="email"
+                />
+              </div>
+              <div class="Input" id="InputPhone">
+                <div class="Input__Top">Телефон</div>
+                <input
+                  placeholder="+79001234567"
+                  class="Input__In"
+                  type="tel"
+                  name="phone"
+                />
+              </div>
+              <input
+                type="submit"
+                name="submitForm"
+                class="Button"
+                value="Войти"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="Page__Popout"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.Button {
+  width: 100%;
+  min-height: 34px;
+  padding: 10px 0;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  border-radius: var(--buttonBorderRadius);
+  background-color: var(--buttonBackground);
+  color: var(--buttonColor);
+  font-weight: var(--weightBold);
+  cursor: pointer;
+  transition: all 0.05s linear; }
+  .Button:hover {
+    opacity: 0.85; }
+  .Button:active {
+    opacity: 0.7;
+    transform: translateY(1px); }

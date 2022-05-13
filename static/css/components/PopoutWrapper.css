@@ -1,0 +1,43 @@
+.PopoutWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  background: var(--overlayBackground);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.PopoutWrapper .Popout {
+  background-color: var(--popoutBackground);
+  border-radius: var(--popoutBorderRadius);
+  min-width: calc(20% - 40px);
+  max-width: 90%;
+  max-height: 90%;
+  padding: 20px;
+  position: relative;
+  animation: PopoutEnter 0.2s ease; }
+  .PopoutWrapper .Popout__Close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    user-select: none;
+    cursor: pointer; }
+    .PopoutWrapper .Popout__Close svg {
+      width: 12px;
+      height: 12px; }
+  .PopoutWrapper .Popout__In {
+    margin-top: 10px;
+    font-size: 14px; }
+
+@keyframes PopoutEnter {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
