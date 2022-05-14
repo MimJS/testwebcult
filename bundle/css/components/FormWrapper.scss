@@ -1,0 +1,35 @@
+.FormWrapper {
+  & {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__In {
+    & {
+      width: fit-content;
+      height: fit-content;
+      max-width: calc(90% - 40px);
+      max-height: calc(90% - 40px);
+      min-width: calc(20% - 40px);
+      background-color: var(--formBackground);
+      border-radius: var(--formBorderRadius);
+      padding: 20px;
+    }
+    .Form {
+      &__Title {
+        font-size: 20px;
+        font-weight: var(--weightBold);
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &__In {
+        margin-top: 20px;
+      }
+    }
+  }
+}

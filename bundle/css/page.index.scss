@@ -1,0 +1,12 @@
+@import "./scheme.css";
+@import "./components/Input.css";
+@import "./components/PopoutWrapper.css";
+@import "./components/Button.css";
+@import "./components/FormWrapper.css";
+@import "./components/Page.css";
+
+.Page .Page__In .FormWrapper .Input {
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}

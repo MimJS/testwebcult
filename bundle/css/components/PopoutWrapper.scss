@@ -1,0 +1,56 @@
+.PopoutWrapper {
+  & {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: var(--overlayBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Popout {
+    background-color: var(--popoutBackground);
+    border-radius: var(--popoutBorderRadius);
+    min-width: calc(20% - 40px);
+    max-width: calc(90% - 40px);
+    max-height: calc(90% - 40px);
+    padding: 20px;
+    position: relative;
+    animation: PopoutEnter 0.2s ease;
+    &__Close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      user-select: none;
+      cursor: pointer;
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    &__In {
+      margin-top: 10px;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      height: calc(100% - 10px);
+      white-space: pre-line;
+    }
+  }
+}
+
+@keyframes PopoutEnter {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

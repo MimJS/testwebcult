@@ -1,0 +1,17 @@
+.Input {
+  &__Top {
+    color: var(--colorSecondary);
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+        overflow: hidden;
+  }
+  &__In {
+    outline: none;
+    border-radius: var(--inputBorderRadius);
+    border: 1px solid var(--inputBorderColor);
+    padding: 8px 12px;
+    width: calc(100% - 24px);
+  }
+}
